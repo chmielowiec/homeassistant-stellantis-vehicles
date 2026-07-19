@@ -83,6 +83,11 @@ The service is provided by Render.com on a free tier, with performance limitatio
 
 > If you want to support the project and extend these limits, <ins>become a hero</ins> and join our **monthly [supporters club](#support-the-project)**!
 
+If you'd rather not depend on the shared Render.com instance, you can self-host the
+[worker](https://github.com/andreadegiovine/homeassistant-stellantis-vehicles-worker-v2) and enter
+its URL in the "Login service URL" field of the config flow's remote-login step instead of the
+default one.
+
 ### Manual
 <details><summary><b>Using browser console</b></summary>
 
@@ -279,21 +284,21 @@ Phil S
 <sub>*and other heroes*</sub>
 
 **🥉 3 BEERS**  
+Hubert  
 Someone  
 Mark  
-Somebody  
 <sub>*and other heroes*</sub>
 
 **⭐ 2 BEERS**  
+Liam  
 Kristian  
 Dave  
-Somebody  
 <sub>*and other heroes*</sub>
 
 **⭐ 1 BEERS**  
+Sneopu  
+Nischi  
 Somebody  
-Someone  
-Giuliano  
 <sub>*and other heroes*</sub>
 
 ### Want to join the Club?
