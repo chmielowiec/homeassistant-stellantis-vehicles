@@ -24,6 +24,12 @@ matching release+asset exists, HACS fails with a 404, even though the code itsel
 incomplete build. Before tagging, diff the branch you're releasing from against the other
 branch to confirm it actually contains everything intended.
 
+**Second mistake made once, don't repeat it either:** always run `git status` (and `git
+pull --ff-only` if behind) before `git add -A` in this repo. `README.md`'s installs badge
+and `manifest.json`'s version get bumped by processes outside this workspace (manual
+releases, upstream automation); a stale local working tree can silently regress them
+backwards if swept up by an unrelated commit.
+
 ## Version scheme
 
 `custom_components/stellantis_vehicles/const.py` parses `manifest.json`'s `"version"` as
